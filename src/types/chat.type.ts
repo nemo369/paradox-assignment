@@ -37,7 +37,7 @@ export interface Range {
   }
   export interface Conversation {
     id: number
-    type: number
+    type: QuestionType
     text: string
     possibleAnswers: string[]
     range?: {
@@ -46,5 +46,10 @@ export interface Range {
     }
   }
   
+  export enum QuestionType{
+    TEXT = 1,
+    NUMBER = 2,
+    MULTI_CHOICE = 3,
+  }
  
   

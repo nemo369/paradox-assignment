@@ -1,9 +1,10 @@
 <script lang="ts" setup>
+import{QuestionType} from '../types/chat.type'
 const props = defineProps({
   conversation: {
     type: Object as () => {
       id: number;
-      type: number;
+      type: QuestionType;
       text: string;
       possibleAnswers: string[];
       range?: {
@@ -24,7 +25,7 @@ const props = defineProps({
         <span v-if="i">,&nbsp;</span> <span>{{ answer }} </span>
       </div>
     </div>
-    <div v-if="conversation.range" class="text-slate-700">
+    <div v-if="conversation.type === QuestionType.NUMBER && conversation.range" class="text-slate-700">
       Range: {{ conversation.range.min }} - {{ conversation.range.max }}
     </div>
   </div>
