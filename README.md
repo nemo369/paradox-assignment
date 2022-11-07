@@ -1,3 +1,11 @@
+# To run locally
+# 1. Npm install
+# 2. Npm run dev
+
+** The logic for tasks 1 is in `data/conversation.json`
+** The logic for tasks 2 is in `/src/service/conversations.ts`
+** The logic of the app and for task #3 is in the file `src/App.vue` **
+
 # General idea:
 You are about to create a Chatbot Conversation Builder page for recruiters!
 
