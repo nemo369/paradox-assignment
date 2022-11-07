@@ -1,0 +1,49 @@
+{
+  "chatId": "QZ8M559",
+  "conversations": [
+    {
+      "id": 1,
+      "type": 1,
+      "text": "Hi! I'm Olivia, your personal Paradox job assistant. Thank you for your interest. We are looking for great talent for many types of jobs. To get started, can you please provide me with your first and last name?",
+      "possibleAnswers": [],
+      "range": null
+    },
+    {
+      "id": 4,
+      "type": 2,
+      "text": "How many years of Truck Driving experience do you have?",
+      "possibleAnswers": [],
+      "range": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "id": 5,
+      "type": 3,
+      "text": "Have you heard of Paradox before?",
+      "possibleAnswers": [
+        "Yes",
+        "No"
+      ],
+      "range": null
+    },
+    {
+      "id": 8,
+      "type": 1,
+      "text": "Why do you want to work at Paradox?",
+      "possibleAnswers": [],
+      "range": null
+    },
+    {
+      "id": 11,
+      "type": 2,
+      "text": "From 1 to 10, how would you rate the process so far?",
+      "possibleAnswers": [],
+      "range": {
+        "min": 1,
+        "max": 10
+      }
+    }
+  ]
+}
