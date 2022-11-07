@@ -39,7 +39,6 @@ const createQuestions = (questionsIds: ChatQuestion[] ) => {
 }
 
 
-//Task 2- Load existing chat
 const createChat = (chatID: string) => {
     const chat = chats.find(({ chatID: chat }) => chat === chatID);
     if(!chat) return null;
@@ -69,6 +68,7 @@ const createData = () => {
     return data;
 };
 
+//Task 2- Load existing chat
 export const getConversation = (chatId: string) => {
     const chat = createChat(chatId);
     return chat

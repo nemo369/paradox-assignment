@@ -1,14 +1,19 @@
 <script lang="ts">
 import { ref } from 'vue';
-
+import {randomFromArr} from '../utils/utils';
 export default {
   name: 'SubmitChatId',
   emits: ['fetchChat'],
   setup(props, { emit }) {
-    const chatId = ref('QZ8M559');
+    const chatsIds = ['003KG45','QZ8M559','67AA1BO','334PS89' ,'QZ8M559'];
+    const chatId = ref(randomFromArr(chatsIds));
 
     const loadChat = () => {
-      emit('fetchChat', chatId.value);
+      if(chatId.value) {
+        emit('fetchChat', chatId.value);
+        return
+      }
+      chatId.value = randomFromArr(chatsIds);
     };
 
     return {
